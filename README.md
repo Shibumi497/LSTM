@@ -1,0 +1,2 @@
+# lstm
+First LSTM made 
