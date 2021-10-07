@@ -27,7 +27,7 @@ warnings.filterwarnings("ignore")
 import matplotlib.pyplot as plt
 import pandas as pd
 # Load data
-data = pd.read_csv('C:/Users/Arthur/Downloads/PhD_work/CCH_BC_2018_cch_bc.csv')
+data = pd.read_csv('...')
 data =data.dropna()
 # Plot
 plt.figure(figsize=(14.8, 4.2))
@@ -43,7 +43,7 @@ plt.show()
 
 # Importing dataset
 
-dataset_train = pd.read_csv('C:/Users/Arthur/Downloads/PhD_work/CCH_BC_2018_cch_bc.csv')
+dataset_train = pd.read_csv('...')
 training_set = dataset_train.iloc[:, 1:2].values
 
 # Feature Scaling
@@ -116,12 +116,12 @@ end_time = time.monotonic()
 print(timedelta(seconds=end_time - start_time))
 
 # Save the weights model
-regressor.save_weights('C:/Users/Arthur/Downloads/PhD_work/lstm22_weights_cch_bc.h5')
+regressor.save_weights('C:/Users/.../lstm22_weights_cch_bc.h5')
 #Out[19]: <keras.callbacks.callbacks.History at 0x27ba3bacf98>
-regressor.load_weights('C:/Users/Arthur/Downloads/PhD_work/lstm20_weights_cch_bc.h5')
+regressor.load_weights('C:/Users/.../lstm20_weights_cch_bc.h5')
 ## Making the predictions and visualising the results
 
-dataset_test = pd.read_csv('C:/Users/Arthur/Downloads/PhD_work/CCH_BC_2019_cch_bc.csv')
+dataset_test = pd.read_csv('C:/Users/.../CCH_BC_2019_cch_bc.csv')
 test_set = dataset_test.iloc[1:25, 1:2].values
 
 # Getting the predicted CCH BC 2019
